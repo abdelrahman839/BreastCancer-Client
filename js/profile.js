@@ -166,7 +166,7 @@ const addNewSection = () => {
     <div class="col-4 d-flex align-items-end flex-column">
         <div class=" w-50 form-group  my-2 position-relative">
             <input type="text" class="form-control name-section">
-            <button class="btn btn-danger ml-3 delete-btn-medic">Delete</button>
+            <button class="btn btn-danger ml-1 delete-btn-medic">حذف</button>
             <div class="delete-icon delete-icon-medic">
                 <i class="fa-solid fa-minus"></i>
             </div>
@@ -237,7 +237,7 @@ const preDeleteMedic = () => {
             deleteMedicBtn[index].animate([
                 // keyframes
                 { width: '0px', },
-                { width: '100px', }
+                { width: '50px', }
             ], {
                 // timing options
                 duration: 200,
@@ -294,7 +294,7 @@ const addDrSection = () => {
                             <div class=" w-50 form-group  my-2 position-relative d-flex">
                      
                                 <input type="text" class="form-control name-section">
-                                <button class="btn btn-danger ml-3 delete-btn">Delete</button>
+                                <button class="btn btn-danger ml-1 delete-btn">حذف</button>
                                 <div class="delete-icon delete-icon-dr">
                                     <i class="fa-solid fa-minus"></i>
                                 </div>
@@ -357,7 +357,7 @@ const preDeleteDr = () => {
             deleteBtn[index].animate([
                 // keyframes
                 { width: '0px', },
-                { width: '100px', }
+                { width: '50px', }
             ], {
                 // timing options
                 duration: 200,
@@ -420,7 +420,7 @@ const saveCheack = (id) => {
         <div class="col-4 d-flex align-items-end flex-column">
             <div class=" w-50 form-group  my-2 position-relative d-flex">
                 <input type="text" class="form-control name-section" value=${treatmentBody.querySelector('.name-section').value} disabled>
-                    <button class="btn btn-danger ml-3 delete-btn-medic">Delete</button>
+                    <button class="btn btn-danger ml-1 delete-btn-medic">حذف</button>
                         <div class="delete-icon delete-icon-medic">
                             <i class="fa-solid fa-minus"></i>
                         </div>
@@ -467,7 +467,7 @@ const saveCheack = (id) => {
                             <div class=" w-50 form-group  my-2 position-relative d-flex">
                      
                                 <input type="text" class="form-control " value=${drBody.querySelector('.name-section').value} disabled>
-                                <button class="btn btn-danger ml-3 delete-btn">Delete</button>
+                                <button class="btn btn-danger ml-1 delete-btn">حذف</button>
                                 <div class="delete-icon delete-icon-dr">
                                     <i class="fa-solid fa-minus"></i>
                                 </div>
