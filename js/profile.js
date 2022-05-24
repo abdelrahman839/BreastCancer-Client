@@ -468,6 +468,7 @@ const saveCheack = (id) => {
                      
                                 <input type="text" class="form-control " value=${drBody.querySelector('.name-section').value} disabled>
                                 <button class="btn btn-danger ml-1 delete-btn">حذف</button>
+                                
                                 <div class="delete-icon delete-icon-dr">
                                     <i class="fa-solid fa-minus"></i>
                                 </div>
