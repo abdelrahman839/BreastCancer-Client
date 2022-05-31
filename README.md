@@ -1,6 +1,7 @@
 # Breast-Cancer-Client
-<div>
 <img src="https://user-images.githubusercontent.com/58876947/171261774-b2ba3957-f000-4baf-a4b4-e1eec0d2c49f.png" width="45%;" style="width:100%;" />
+
+<div style="display:flex; flex-wrap:wrap; justify-content:space-between;">
 <img src="https://user-images.githubusercontent.com/58876947/171261801-09f17b35-9085-4939-b0e6-5541bb9694e4.png" width="45%;"/>
 <img src="https://user-images.githubusercontent.com/58876947/171261848-504fd40b-a550-4411-ae28-48193e8ea278.png" width="45%;"/>
 <img src="https://user-images.githubusercontent.com/58876947/171261876-707e51f6-1099-44fe-8dc6-8bb44b44bacc.png" width="45%;"/>
