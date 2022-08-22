@@ -43,7 +43,7 @@ const insertHospitals = async () => {
         `;
     });
     document.getElementById('loading').style.opacity = '0';
-    document.getElementById('loading').style.position = 'absolute';
+    document.getElementById('loading').style.position = 'fixed';
     hospitalBody.innerHTML = container;
 
 
