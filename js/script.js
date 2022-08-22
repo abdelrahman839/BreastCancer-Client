@@ -161,6 +161,7 @@ const loginWithMobile = async () => {
     const phone = document.getElementById('mobile-input').value;
     if (regex.test(phone)) {
         document.querySelector('.invalid-num').style.display = 'none';
+        document.getElementById('mobile-btn').innerHTML = "تحميل";
         await $.ajax({
             url: `https://breast-cancer-server.herokuapp.com/user/sign-in-mobile?phone=${phone}`,
             type: 'POST',
@@ -191,6 +192,8 @@ const loginWithMobile = async () => {
 
             }
         });
+        document.getElementById('mobile-btn').innerHTML = "تسجيل";
+
         window.localStorage.setItem('Breast-Cancer-Token', "Breast-Cancer-Token-Mobile");
         window.localStorage.setItem('phone', phone);
         checkToken();

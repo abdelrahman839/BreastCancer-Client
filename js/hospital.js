@@ -10,6 +10,8 @@ const fetchAllHospital = async () => {
     console.log(hospitalArr)
 }
 const insertHospitals = async () => {
+    document.getElementById('loading').style.opacity = '1';
+    document.getElementById('loading').style.position = 'unset';
     await fetchAllHospital();
     let container = '';
     hospitalArr.forEach(ele => {
@@ -40,6 +42,8 @@ const insertHospitals = async () => {
     </div>
         `;
     });
+    document.getElementById('loading').style.opacity = '0';
+    document.getElementById('loading').style.position = 'absolute';
     hospitalBody.innerHTML = container;
 
 
@@ -47,9 +51,6 @@ const insertHospitals = async () => {
 insertHospitals();
 
 const search = (word) => {
-    console.log(word)
-
-
     let search = '';
     hospitalArr.forEach(ele => {
         if (ele.name.includes(word) || ele.governorate.includes(word) || ele.address.includes(word)) {
